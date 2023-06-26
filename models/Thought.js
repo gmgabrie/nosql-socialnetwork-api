@@ -33,7 +33,7 @@ const reactionSchema = new Schema(
 );
 
 // Schema to create Thought model
-const userSchema = new Schema(
+const ThoughtSchema = new Schema(
   {
     thoughtText: {
       type: String,
@@ -44,14 +44,12 @@ const userSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      unique: true,
-      match: [/.+\@.+\..+/],
     },
     username: {
       type: String,
       required: true,
     },
-    reactions: [reactionsSchema],
+    reactions: [reactionSchema],
   },
   {
     toJSON: {
@@ -63,10 +61,10 @@ const userSchema = new Schema(
 );
 
 //get total count of reactions
-thougth.Schema.virtual("reactionCount").get(function () {
+ThoughtSchema.virtual("reactionCount").get(function () {
   return this.reactions.length;
 });
 
-const Thought = model("Thought", thoughtSchema);
+const Thought = model("Thought", ThoughtSchema);
 
 module.exports = Thought;
