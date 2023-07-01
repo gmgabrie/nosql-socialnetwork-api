@@ -6,7 +6,7 @@
 
 - [Description](#description)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Usage and Walkthrough Video](#usage-and-walkthrough-video)
 - [Licenses](#licenses)
 - [Contributing](#contributing)
 - [Tests](#tests)
@@ -20,9 +20,11 @@ This is a backend API for a social network web application where users can share
 
 This is just the backend API so really the only installation instructions would be to clone the files from the github repository to your local machine, install the necessary npm packages and then run 'node index.js' from the terminal.
 
-## Usage
+## Usage and Walkthrough Video
 
 After cloning the files from the github repository to your local machine, installing the npm packages, and starting the application, you will use an API testing utility such as Insomnia to test API post, put and delete routes.
+
+Walkthrough Video: https://drive.google.com/file/d/1Xc6FMWsPHZ_NxBNs8VKvtWAl3jspMCUR/view
 
 ## Licenses
 
